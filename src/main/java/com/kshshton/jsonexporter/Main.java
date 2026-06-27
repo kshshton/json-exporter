@@ -1,9 +1,8 @@
-package org.example;
+package com.kshshton.jsonexporter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -12,7 +11,6 @@ import java.net.http.HttpResponse;
 import java.sql.*;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 public class Main {
     public static class Response {
