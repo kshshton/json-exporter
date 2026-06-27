@@ -1,5 +1,7 @@
 package com.kshshton.jsonexporter;
 
+import com.kshshton.jsonexporter.models.Post;
+
 import java.sql.*;
 
 public class Database {
@@ -31,7 +33,7 @@ public class Database {
         }
     }
 
-    public void savePost(Main.Post post) throws SQLException {
+    public void savePost(Post post) throws SQLException {
         String sql = """
                 INSERT INTO posts (id, title, tags, views, userId)
                 VALUES (?, ?, ?, ?, ?);
